@@ -1,0 +1,22 @@
+<!-- src/app/search/search.component.html -->
+
+<div>
+  <form #searchForm="ngForm" (ngSubmit)="onSubmit()">
+    <label for="searchTerm">Search:</label>
+    <input
+      type="text"
+      id="searchTerm"
+      name="searchTerm"
+      [(ngModel)]="searchTerm"
+      required
+    />
+    <button type="submit">Search</button>
+  </form>
+
+  <div *ngIf="searchResults.length > 0">
+    <h3>Search Results:</h3>
+    <ul>
+      <li *ngFor="let result of searchResults">{{ result.name }}</li>
+    </ul>
+  </div>
+</div>

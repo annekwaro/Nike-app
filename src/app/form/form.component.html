@@ -1,0 +1,30 @@
+<p>Form works!</p>
+<form action="" (submit)="onSubmit()">
+  <div>
+    <div>Name</div>
+    <input type="text" placeholder="Name" name="name" [(ngModel)]="user.name" />
+  </div>
+
+  <div>
+    <div>Password</div>
+    <input
+      type="text"
+      placeholder="Password"
+      password="password"
+      [(ngModel)]="user.password"
+    />
+    <div>
+      <div>Email</div>
+      <input
+        type="text"
+        placeholder="Email"
+        email="email"
+        [(ngModel)]="user.email"
+      />
+      @if (!user.email) {
+      <p>Email is required!</p>
+      }
+    </div>
+    <button type="submit">Submit</button>
+  </div>
+</form>

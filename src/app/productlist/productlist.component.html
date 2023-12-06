@@ -1,0 +1,21 @@
+<!--<app-filter [all]="totalProductCount"></app-filter>-->
+<div class="gallery-container">
+  <div *ngFor="let product of products" class="product-container">
+    <img
+      [src]="product.imageUrl"
+      alt="{{ product.name }}"
+      class="product-image"
+    />
+    <div
+      class="product-info"
+      [ngStyle]="{ color: product.availability ? 'green' : 'red' }"
+    >
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <p>Color: {{ product.color }}</p>
+      <p [ngStyle]="{ color: product.availability ? 'green' : 'red' }">
+        Availability: {{ product.availability ? "In Stock" : "Out of Stock" }}
+      </p>
+    </div>
+  </div>
+</div>
