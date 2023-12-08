@@ -1,8 +1,9 @@
 <div class="ekart--products--container">
   <div class="ekart--product--item" *ngFor="let prod of products">
-    <div class="ekart--product--image">
+    <div class="ekart--product--image" (click)="viewProductDetails(prod.id)">
       <img [src]="prod.imageURL" class="ekart--product--image" />
     </div>
+
     <div class="ekart-wishlist-sale-container">
       <div class="ekart--add--to--wishlist">
         <i class="fa fa-heart-o" aria-hidden="true"></i>

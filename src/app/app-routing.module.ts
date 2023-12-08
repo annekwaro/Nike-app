@@ -8,12 +8,14 @@ import { FormsModule } from '@angular/forms';
 import { LoopComponent } from './loop/loop.component';
 import { ImagesComponent } from './images/images.component';
 import { ProductlistComponent } from './productlist/productlist.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const routes: Routes = [
   { path: '', component: LoopComponent },
   { path: 'about', component: ImagesComponent },
   { path: 'detail', component: FormComponent },
   { path: 'list', component: ProductlistComponent },
+  { path: 'product/:id', component: ProductDetailComponent },
 ];
 
 @NgModule({

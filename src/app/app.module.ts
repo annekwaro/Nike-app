@@ -11,6 +11,7 @@ import { ImagesComponent } from './images/images.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { FilterComponent } from './productlist/filter/filter.component';
 import { SearchComponent } from './search/search.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SearchComponent } from './search/search.component';
     ProductlistComponent,
     FilterComponent,
     SearchComponent,
+    ProductDetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

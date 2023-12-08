@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-images',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './images.component.css',
 })
 export class ImagesComponent {
+  constructor(private router: Router) {}
   products = [
     {
       id: 1,
@@ -39,7 +41,7 @@ export class ImagesComponent {
       is_in_inventory: false,
       items_left: 3,
       imageURL:
-        'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1620138546344-7b2c38516edf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA1fHxuaWtlJTIwc2hvZXN8ZW58MHx8MHx8fDA%3D',
       slug: 'nike-react-miler',
     },
     {
@@ -56,7 +58,7 @@ export class ImagesComponent {
       is_in_inventory: true,
       items_left: 3,
       imageURL:
-        'https://images.unsplash.com/photo-1605348532760-6753d2c43329?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1588361861040-ac9b1018f6d5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'nike-air-zoom-pegasus-37',
     },
     {
@@ -74,7 +76,7 @@ export class ImagesComponent {
       is_in_inventory: false,
       items_left: 3,
       imageURL:
-        'https://images.unsplash.com/photo-1605408499391-6368c628ef42?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmlrZSUyMHNob2VzfGVufDB8fDB8fHww',
       slug: 'nike-joyride-run-flyknit',
     },
     {
@@ -266,7 +268,7 @@ export class ImagesComponent {
       is_in_inventory: false,
       items_left: 4,
       imageURL:
-        'https://cdn.shopify.com/s/files/1/0016/0074/9623/products/BRIDGPORT_ADVICE-BLACK_1_800x800.jpg?v=1576567903',
+        'https://images.unsplash.com/photo-1592771404380-467f535c7c4f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'bridgport-advice',
     },
     {
@@ -284,7 +286,7 @@ export class ImagesComponent {
       is_in_inventory: true,
       items_left: 5,
       imageURL:
-        'https://cdn.shopify.com/s/files/1/0016/0074/9623/products/Beck-Black_800x800.jpg',
+        'https://images.unsplash.com/photo-1611510338559-2f463335092c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'beck',
     },
     {
@@ -301,7 +303,7 @@ export class ImagesComponent {
       is_in_inventory: true,
       items_left: 6,
       imageURL:
-        'https://cdn.shopify.com/s/files/1/0016/0074/9623/products/fester-Tan_800x800.jpg?v=1575537531',
+        'https://images.unsplash.com/photo-1607792246307-2c7ba687b50a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'fester',
     },
     {
@@ -318,7 +320,7 @@ export class ImagesComponent {
       is_in_inventory: true,
       items_left: 7,
       imageURL:
-        'https://cdn.shopify.com/s/files/1/0016/0074/9623/products/PIXEL-TAN_800x800.jpg?v=1577420506',
+        'https://images.unsplash.com/photo-1613166945462-cc582838b56e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'pixel',
     },
     {
@@ -336,7 +338,7 @@ export class ImagesComponent {
       is_in_inventory: false,
       items_left: 2,
       imageURL:
-        'https://cdn.shopify.com/s/files/1/0016/0074/9623/products/Austin-Coffee_800x800.jpg?v=1574772988',
+        'https://images.unsplash.com/photo-1612015670817-0127d21628d4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'austin',
     },
     {
@@ -353,7 +355,7 @@ export class ImagesComponent {
       is_in_inventory: true,
       items_left: 6,
       imageURL:
-        'https://cdn.shopify.com/s/files/1/0016/0074/9623/products/009240000-11-SS-HL-0135-Black_800x800.jpg?v=1572264270',
+        'https://images.unsplash.com/photo-1628253747716-0c4f5c90fdda?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'ss-hl-0135',
     },
     {
@@ -371,7 +373,7 @@ export class ImagesComponent {
       is_in_inventory: true,
       items_left: 4,
       imageURL:
-        'https://cdn.shopify.com/s/files/1/0016/0074/9623/products/009250000-779-SS-HL-0136-Coffee_800x800.jpg?v=1571900372',
+        'https://images.unsplash.com/photo-1543508282-5c1f427f023f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'ss-hl-0136',
     },
     {
@@ -388,7 +390,7 @@ export class ImagesComponent {
       is_in_inventory: true,
       items_left: 3,
       imageURL:
-        'https://cdn.shopify.com/s/files/1/0016/0074/9623/products/000300242-484-SS-HL-0128-Blue_800x800.jpg?v=1583235174',
+        'https://images.unsplash.com/photo-1595909236612-9fd30b476365?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'ss-hl-0128',
     },
     {
@@ -405,7 +407,7 @@ export class ImagesComponent {
       is_in_inventory: false,
       items_left: 7,
       imageURL:
-        'https://cdn.shopify.com/s/files/1/0016/0074/9623/products/009170000-479-SS-MS-0075-Red_800x800.jpg?v=1570688687',
+        'https://images.unsplash.com/photo-1581619883162-4a1aa0a6a0c4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'ss-ms-0075',
     },
     {
@@ -422,7 +424,7 @@ export class ImagesComponent {
       is_in_inventory: true,
       items_left: 4,
       imageURL:
-        'https://cdn.shopify.com/s/files/1/0016/0074/9623/products/009170000-615-SS-MS-0075-TAN_800x800.jpg?v=1570688687',
+        'https://images.unsplash.com/photo-1612724189298-89d36b10b26d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'ss-ms-0075',
     },
     {
@@ -439,7 +441,7 @@ export class ImagesComponent {
       is_in_inventory: false,
       items_left: 3,
       imageURL:
-        'https://cdn.shopify.com/s/files/1/0016/0074/9623/products/SS-PM-0093_1_800x800.jpg?v=1570601253',
+        'https://images.unsplash.com/photo-1636718281370-b5e3f51a5af2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODl8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D',
       slug: 'ss-pm-0093',
     },
     {
@@ -561,7 +563,7 @@ export class ImagesComponent {
       is_in_inventory: true,
       items_left: 3,
       imageURL:
-        "https://assets.reebok.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/7599294868804d78a1b1ab6f01718a5e_9366/Club_C_Revenge_Men's_Shoes_White_FV9877_01_standard.jpg",
+        'https://images.unsplash.com/photo-1593081891731-fda0877988da?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8',
       slug: 'club-c-revenge-mens',
     },
     {
@@ -598,4 +600,9 @@ export class ImagesComponent {
       slug: 'michael-feburary-sk8-hi',
     },
   ];
+
+  // Function to navigate to product detail page
+  viewProductDetails(productId: number) {
+    this.router.navigate(['/product', productId]);
+  }
 }
